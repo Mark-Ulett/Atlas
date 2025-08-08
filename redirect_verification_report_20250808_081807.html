@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Verification Report</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 40px; background: #f5f7fa; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px; }
+        .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 30px; }
+        .metric { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .metric-value { font-size: 2em; font-weight: bold; color: #667eea; }
+        .domain-grid { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #f8f9fa; padding: 12px; text-align: left; font-weight: 600; border-bottom: 2px solid #e9ecef; }
+        td { padding: 12px; border-bottom: 1px solid #f0f0f0; }
+        .status-ready { color: #28a745; font-weight: bold; }
+        .status-blocked { color: #dc3545; font-weight: bold; }
+        .ssl-valid { color: #28a745; }
+        .ssl-invalid { color: #dc3545; }
+        .redirect-pass { color: #28a745; }
+        .redirect-fail { color: #dc3545; }
+        .domain-name { font-weight: 600; color: #495057; }
+        .footer { text-align: center; margin-top: 40px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔀 Redirect Verification Report</h1>
+        <p><strong>Generated:</strong> 2025-08-08 08:18:07</p>
+        <p><strong>Total Domains:</strong> 5</p>
+    </div>
+    
+    <div class="summary">
+        <div class="metric">
+            <div class="metric-value">5</div>
+            <div>Total Domains</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">5</div>
+            <div>Ready</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">0</div>
+            <div>SSL Issues</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">0</div>
+            <div>Redirect Issues</div>
+        </div>
+    </div>
+    
+    <div class="domain-grid">
+        <h2 style="padding: 20px 20px 0;">📊 Domain Status Overview</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>SSL (Main)</th>
+                    <th>SSL (WWW)</th>
+                    <th>Redirects</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="domain-name">allcreaturespethospital.com</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="redirect-pass">✅ 3/3 Pass</td>
+                    <td class="status-ready">READY</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">pacificavenuevetclinic.com</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="redirect-pass">✅ 3/3 Pass</td>
+                    <td class="status-ready">READY</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">southcherokee.net</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="redirect-pass">✅ 3/3 Pass</td>
+                    <td class="status-ready">READY</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">windyhillvet.com</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="redirect-pass">✅ 3/3 Pass</td>
+                    <td class="status-ready">READY</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">villageahjericho.com</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="ssl-valid">✅ Valid (89d)</td>
+                    <td class="redirect-pass">✅ 3/3 Pass</td>
+                    <td class="status-ready">READY</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="domain-grid">
+        <h2 style="padding: 20px 20px 0;">🔀 Redirect Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Test</th>
+                    <th>Expected</th>
+                    <th>Actual</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="domain-name">allcreaturespethospital.com</td>
+                    <td>http://allcreaturespethospital.com</td>
+                    <td>https://www.allcreaturespethospital.com</td>
+                    <td>https://www.allcreaturespethospital.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">allcreaturespethospital.com</td>
+                    <td>https://allcreaturespethospital.com</td>
+                    <td>https://www.allcreaturespethospital.com</td>
+                    <td>https://www.allcreaturespethospital.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">allcreaturespethospital.com</td>
+                    <td>http://www.allcreaturespethospital.com</td>
+                    <td>https://www.allcreaturespethospital.com</td>
+                    <td>https://www.allcreaturespethospital.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">pacificavenuevetclinic.com</td>
+                    <td>http://pacificavenuevetclinic.com</td>
+                    <td>https://www.pacificavenuevetclinic.com</td>
+                    <td>https://www.pacificavenuevetclinic.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">pacificavenuevetclinic.com</td>
+                    <td>https://pacificavenuevetclinic.com</td>
+                    <td>https://www.pacificavenuevetclinic.com</td>
+                    <td>https://www.pacificavenuevetclinic.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">pacificavenuevetclinic.com</td>
+                    <td>http://www.pacificavenuevetclinic.com</td>
+                    <td>https://www.pacificavenuevetclinic.com</td>
+                    <td>https://www.pacificavenuevetclinic.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">southcherokee.net</td>
+                    <td>http://southcherokee.net</td>
+                    <td>https://www.southcherokee.net</td>
+                    <td>https://www.southcherokee.net</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">southcherokee.net</td>
+                    <td>https://southcherokee.net</td>
+                    <td>https://www.southcherokee.net</td>
+                    <td>https://www.southcherokee.net</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">southcherokee.net</td>
+                    <td>http://www.southcherokee.net</td>
+                    <td>https://www.southcherokee.net</td>
+                    <td>https://www.southcherokee.net</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">windyhillvet.com</td>
+                    <td>http://windyhillvet.com</td>
+                    <td>https://www.windyhillvet.com</td>
+                    <td>https://www.windyhillvet.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">windyhillvet.com</td>
+                    <td>https://windyhillvet.com</td>
+                    <td>https://www.windyhillvet.com</td>
+                    <td>https://www.windyhillvet.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">windyhillvet.com</td>
+                    <td>http://www.windyhillvet.com</td>
+                    <td>https://www.windyhillvet.com</td>
+                    <td>https://www.windyhillvet.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">villageahjericho.com</td>
+                    <td>http://villageahjericho.com</td>
+                    <td>https://www.villageahjericho.com</td>
+                    <td>https://www.villageahjericho.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">villageahjericho.com</td>
+                    <td>https://villageahjericho.com</td>
+                    <td>https://www.villageahjericho.com</td>
+                    <td>https://www.villageahjericho.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+                <tr>
+                    <td class="domain-name">villageahjericho.com</td>
+                    <td>http://www.villageahjericho.com</td>
+                    <td>https://www.villageahjericho.com</td>
+                    <td>https://www.villageahjericho.com</td>
+                    <td class="redirect-pass">✅</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>Generated by Redirect Verification System</p>
+    </div>
+</body>
+</html>
